@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "142425453157",
+    "project_id": "edumentor-70c1b",
+    "storage_bucket": "edumentor-70c1b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142425453157:android:8eca0d89c819bb0cf5cc8c",
+        "android_client_info": {
+          "package_name": "com.edumentor.edumentor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142425453157-ad913mmivuj6jmiu0hocs1mfi0fvfe2g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8CBPMoHgG1sqVBwQUEmU_jL24DUz1_-U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142425453157-ad913mmivuj6jmiu0hocs1mfi0fvfe2g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
