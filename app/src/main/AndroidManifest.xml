@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Edumentor">
-        <activity android:name=".VideoActivity"></activity>
+        <activity android:name=".VideoActivity">
+        </activity>
         <activity android:name=".FrontPageActivity" />
         <activity android:name=".BotActivity" />
         <activity android:name=".SettingsActivity" />

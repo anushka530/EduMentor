@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
     tools:context=".AboutFragment">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:text="Escape the shackles of tutorial hell"
+        android:gravity="center"
+        android:layout_marginTop="50dp"
+        android:textColor="#595252"
+        android:textStyle="bold"
+        android:fontFamily="cursive"
+        android:textSize="25sp"/>
 
-</FrameLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="5dp"
+        android:fontFamily="sans-serif-thin"
+        android:padding="5dp"
+        android:text="EduMentor is for all learners and students who are embarking their journey in an online learning environment, and seek guidance from individual who have relevant learning experiences in their chosen career path."
+        android:textColor="#595252"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</LinearLayout>

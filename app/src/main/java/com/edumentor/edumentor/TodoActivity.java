@@ -52,7 +52,7 @@ public class TodoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_todo);
-        getSupportActionBar().hide();
+
         recyclerView = findViewById(R.id.recyclerView);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
 
