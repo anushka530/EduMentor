@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.edumentor.edumentor">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -11,29 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Edumentor">
-        <activity android:name=".BotActivity">
-
-        </activity>
+        <activity android:name=".VideoActivity"></activity>
+        <activity android:name=".FrontPageActivity" />
+        <activity android:name=".BotActivity" />
         <activity android:name=".SettingsActivity" />
         <activity android:name=".ChatsDetailActivity" />
-        <activity android:name=".TodoActivity" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".TodoActivity">
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
-
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity">
-             </activity>
-        <activity android:name=".MainActivity" >
-            </activity>
+        <activity android:name=".LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
     </application>
 
 </manifest>

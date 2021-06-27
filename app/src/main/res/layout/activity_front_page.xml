@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lineaeLay"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_700"
+    android:orientation="vertical"
+    tools:context=".FrontPageActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/profileEdu"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/profileedu" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:text="EduMentor"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_gravity="center"
+        android:background="@color/white" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="Discover your path to success"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/eduanimation" />
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/cvbg"
+        android:orientation="vertical">
+
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="100dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/blue" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/converse_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/cv4" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/chat" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Converse"
+                        android:textColor="#d703082b"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="45dp"
+                        android:text="Engage yourself in conversation"
+                        android:textColor="#6003082b"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/bot_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/cv2" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/bot" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Say Hi to Kilu"
+                        android:textColor="#d703082b"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="90dp"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="45dp"
+                        android:text="Learn about tech related opportunities"
+                        android:textColor="#6003082b"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/video_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/cv3" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/smartphone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Video Chat"
+                        android:textColor="#d703082b"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="45dp"
+                        android:text="Face to face doubt solving"
+                        android:textColor="#6003082b"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:id="@+id/to_do_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/cv1" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/checklist" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="20dp"
+                        android:text="To-do List"
+                        android:textColor="#d703082b"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="90dp"
+                        android:layout_marginTop="45dp"
+                        android:text="Make your own check-list"
+                        android:textColor="#6003082b"
+                        android:textSize="12sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</LinearLayout>
