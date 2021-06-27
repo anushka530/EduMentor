@@ -17,6 +17,7 @@ public class FrontPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
         binding= ActivityFrontPageBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 

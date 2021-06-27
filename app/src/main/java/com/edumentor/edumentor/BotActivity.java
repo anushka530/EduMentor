@@ -50,7 +50,7 @@ public class BotActivity extends AppCompatActivity implements BotReply {
         chatView = findViewById(R.id.chatView);
         editMessage = findViewById(R.id.editMessage);
 
-        getSupportActionBar().hide();
+
 
         chatBotAdapter = new ChatBotAdapter(messageList, this);
 
