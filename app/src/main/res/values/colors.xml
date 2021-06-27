@@ -12,7 +12,11 @@
     <color name="grayBackground">#b3bac4</color>
     <color name="brown">#875F01</color>
     <color name="setting_bg">#cac7af</color>
-    <color name="pink">#ffdee1</color>
-    <color name="blue">#70D6F9</color>
+
+    <color name="pink">#F1D9F4</color>
+    <color name="yellow">#FFE01B</color>
+    <color name="blue">#549fbf</color>
+    <color name="gray">#BCBBB4</color>
+    <color name="sky_blue">#ADECE5</color>
 
 </resources>

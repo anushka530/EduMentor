@@ -9,6 +9,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.edumentor.edumentor.databinding.ActivityMainBinding;
 import com.edumentor.edumentor.databinding.ActivityRegisterBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -24,8 +25,6 @@ public class RegisterActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     FirebaseDatabase database;
     ProgressDialog progressDialog;
-
-
 
 
     @Override
@@ -67,13 +66,11 @@ public class RegisterActivity extends AppCompatActivity {
                                     database.getReference().child("Users").child(id).setValue(user);
 
 
-
-                                    Intent intent = new Intent(RegisterActivity.this, BotActivity.class);
+                                    Intent intent = new Intent(RegisterActivity.this, FrontPageActivity.class);
                                     startActivity(intent);
 
 
-                                }
-                                else {
+                                } else {
                                     Toast.makeText(RegisterActivity.this, Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_SHORT).show();
                                 }
 
@@ -91,8 +88,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             }
         });
-       
+
     }
-    
-    }
+}
 

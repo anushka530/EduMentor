@@ -25,7 +25,6 @@ public class LoginActivity extends AppCompatActivity {
 
     EditText inputEmail, inputPassword;
     Button btnLogin;
-    FirebaseAuth auth;
     TextView createNewAccount, forgetpassword;
     ProgressDialog mLoadingBar;
     FirebaseAuth mAuth;
@@ -50,7 +49,7 @@ public class LoginActivity extends AppCompatActivity {
         createNewAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this,RegisterActivity.class);
+                Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(intent);
 
             }
@@ -60,6 +59,11 @@ public class LoginActivity extends AppCompatActivity {
                 AtemptLogin();
             }
         });
+
+        if (mAuth.getCurrentUser() != null) {
+            Intent intent = new Intent(LoginActivity.this, FrontPageActivity.class);
+            startActivity(intent);
+        }
 
         forgetpassword.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -75,7 +79,7 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         String mail = resetMail.getText().toString();
-                        auth.sendPasswordResetEmail(mail).addOnSuccessListener(new OnSuccessListener<Void>() {
+                        mAuth.sendPasswordResetEmail(mail).addOnSuccessListener(new OnSuccessListener<Void>() {
                             @Override
                             public void onSuccess(Void unused) {
                                 Toast.makeText(LoginActivity.this, "Reset Link Sent To Your Email", Toast.LENGTH_SHORT).show();
@@ -104,8 +108,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
-
-
     private void AtemptLogin() {
         String email = inputEmail.getText().toString();
         String password = inputPassword.getText().toString();
@@ -126,7 +128,7 @@ public class LoginActivity extends AppCompatActivity {
                     {
                         mLoadingBar.dismiss();
                         Toast.makeText(LoginActivity.this, "Login is successful",Toast.LENGTH_SHORT).show() ;
-                        Intent intent = new Intent(LoginActivity.this,TodoActivity.class);
+                        Intent intent = new Intent(LoginActivity.this,FrontPageActivity.class);
                         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK| Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(intent);
                         finish();
@@ -153,5 +155,11 @@ public class LoginActivity extends AppCompatActivity {
 
 
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        finishAffinity();
     }
 }

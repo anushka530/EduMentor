@@ -72,6 +72,9 @@ dependencies {
     implementation 'io.grpc:grpc-okhttp:1.30.0'
     implementation 'com.android.support:multidex:1.0.3'
 
+    implementation 'com.airbnb.android:lottie:3.7.0'
+    implementation 'com.github.agorabuilder:native-full-sdk:3.4.5'
+
 
 
 

@@ -69,6 +69,13 @@ public class UsersAdapter extends RecyclerView.Adapter<UsersAdapter.viewHolder> 
 
     }
 
+    public void setFilter(ArrayList<User> userArrayList){
+        list=new ArrayList<>();
+        list.addAll(userArrayList);
+        notifyDataSetChanged();
+    }
+
+
     public static class viewHolder extends RecyclerView.ViewHolder {
         ImageView image;
         TextView userName, userTech;
